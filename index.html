@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk" />
+    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site web de R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, découvrez nos produits et services.">
     <meta name="keywords" content="R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, produits, services, musique, art">
@@ -43,6 +43,22 @@
         .splash-logo {
             width: 500px;
             height: 500px;
+        }
+        
+        /* Styles pour l'iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 500px); /* Ajustez cette valeur pour l'espace de l'iframe */
+        }
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
