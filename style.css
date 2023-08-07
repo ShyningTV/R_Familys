@@ -1,5 +1,4 @@
-/* Désactiver l'affichage de l'URL au survol pour les liens */
-a {
+iframe {
     pointer-events: none;
 }
 
