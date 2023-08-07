@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk">
+    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site web de R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, découvrez nos produits et services.">
     <meta name="keywords" content="R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, produits, services, musique, art">
@@ -13,19 +13,48 @@
     <script src="script.js" defer></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Ajoutez ici d'autres balises meta ou liens pour le référencement -->
+    
+    <style>
+        /* Styles pour le splash screen */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 5s forwards;
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+        
+        .splash-logo {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Splash screen -->
     <div class="splash-screen">
-        <img src="https://media.discordapp.net/attachments/909700941824020510/1138068563882680400/R_Logo_D.png" alt="Logo" width="500" height="500">
+        <img class="splash-logo" src="https://media.discordapp.net/attachments/909700941824020510/1138068563882680400/R_Logo_D.png" alt="Logo">
     </div>
+
+    <!-- Contenu de la page -->
     <div class="iframe-container">
-        <iframe id="iframe" src="https://team-rvsp.wixsite.com/rvspcorp" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://team-rvsp.wixsite.com/rvspcorp" frameborder="0" allowfullscreen></iframe>
     </div>
-    <script>
-        setTimeout(function() {
-            document.getElementById("iframe").style.display = "block";
-            document.querySelector(".splash-screen").style.display = "none";
-        }, 10000); // 10000 milliseconds = 10 seconds
-    </script>
 </body>
 </html>
