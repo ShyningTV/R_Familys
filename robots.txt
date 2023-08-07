@@ -1,0 +1,25 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://team-rvsp.wixsite.com/rvspcorp/sitemap.xml
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Slurp
+Disallow:
+
+User-agent: DuckDuckGoBot
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: YandexBot
+Disallow:
