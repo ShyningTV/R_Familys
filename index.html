@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk" />
+    <meta name="google-site-verification" content="_tJYrhnDvNVtVepjlQobWuivHOXNFwdW3Ws9pDbddrk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site web de R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, découvrez nos produits et services.">
     <meta name="keywords" content="R_𝖲𝗈𝖼𝗂𝖾𝗍𝗒®, produits, services, musique, art">
@@ -16,16 +16,16 @@
 </head>
 <body>
     <div class="splash-screen">
-        <img src="https://media.discordapp.net/attachments/909700941824020510/1138068563882680400/R_Logo_D.png" alt="Logo" class="logo">
+        <img src="https://media.discordapp.net/attachments/909700941824020510/1138068563882680400/R_Logo_D.png" alt="Logo" width="500" height="500">
     </div>
     <div class="iframe-container">
-        <iframe src="https://team-rvsp.wixsite.com/rvspcorp" frameborder="0" allowfullscreen></iframe>
+        <iframe id="iframe" src="https://team-rvsp.wixsite.com/rvspcorp" frameborder="0" allowfullscreen></iframe>
     </div>
     <script>
-        setTimeout(function () {
+        setTimeout(function() {
+            document.getElementById("iframe").style.display = "block";
             document.querySelector(".splash-screen").style.display = "none";
-            document.querySelector(".iframe-container").style.display = "block";
-        }, 30000); // 30 seconds
+        }, 10000); // 10000 milliseconds = 10 seconds
     </script>
 </body>
 </html>
