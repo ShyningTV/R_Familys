@@ -5,16 +5,19 @@ body {
 }
 
 .iframe-container {
-    position: relative;
-    padding-top: 56.25%; /* Utilize a 16:9 aspect ratio for responsive iframes */
-    overflow: hidden;
-}
-
-iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: -100px; /* Adjust this value to hide the header */
+    left: 0;
+    width: 100%;
+    height: calc(100% + 100px); /* Adjust this value to match the top value */
     border: none;
 }
