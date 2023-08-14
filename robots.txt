@@ -1,7 +1,7 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://team-rvsp.wixsite.com/rvspcorp/sitemap.xml
+Sitemap: https://github.com/ShyningTV/R_Familys/blob/main/sitemap.xml
 
 User-agent: Googlebot
 Disallow:
