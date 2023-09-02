@@ -1,7 +1,7 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://github.com/ShyningTV/T-RVSP/blob/main/sitemap.xml
+Sitemap: https://github.com/T-RVSP/corp/blob/main/sitemap.xml
 
 User-agent: Googlebot
 Disallow:
